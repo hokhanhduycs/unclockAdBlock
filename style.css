@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+#app{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #9b27ca 0%, #d33639 100%, #f92121 100%);
+}
+.content{
+    position: absolute;
+    max-width: 480px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px 30px;
+    /* opacity: 0; */
+    /* pointer-events: none; */
+    transform: translate(-50%, -50%) scale(1.2);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0,.06);
+}
+.content.show{
+    opacity: 1 !important;
+    pointer-events: auto;
+    transform: translate(-50%, -50%), scale(1);
+}
+.container .content--warn,
+.content--warn span,
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+}
+.container .content{
+    flex-direction: column;
+}
+.content .content--warn{
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    background: linear-gradient(#9b27ca 0%, #d33639 100%, #f92121 100%)
+}
+.content--warn span{
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    border-radius:inherit;
+}
+.content--warn span i{
+    font-size: 50px;
+    background: linear-gradient(#9b27ca 0%, #d33639 100%, #f92121 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h2{
+    margin-top: 35px;
+    font-size: 32px;
+}
+.content p{
+    font-size: 19px;
+    text-align: center;
+    margin-top:  20px;
+}
+.content button{
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: linear-gradient(135deg, #9b27ca 0%, #d33639 100%, #f92121 100%);
+    border-radius: 50px;
+    cursor: pointer;
+}
